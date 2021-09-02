@@ -9,4 +9,12 @@ Ubuntu
 
 Instalación :
 
-git clone
+git clone https://github.com/piratainformatico2/BashguiaV1.5
+
+gem install lolcat
+
+cd BashguiaV1.5
+
+chmod +x *
+
+bash BashguiaV1.5
