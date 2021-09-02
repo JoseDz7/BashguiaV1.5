@@ -1,0 +1,578 @@
+#!bin/bash
+
+# CREATED X SHARKCODE
+
+# APRENDIZ
+clear
+#               COLORES RESALTADOS
+negro="\e[1;30m"
+azul="\e[1;34m"
+verde="\e[1;32m"
+cian="\e[1;36m"
+rojo="\e[1;31m"
+purpura="\e[1;35m"
+amarillo="\e[1;33m"
+blanco="\e[1;37m"
+#                 COLORES BAJOS
+black="\e[0;30m"
+blue="\e[0;34m"
+green="\e[0;32m"
+cyan="\e[0;36m"
+R="\e[0;31m"
+purple="\e[0;35m"
+yellow="\e[0;33m"
+W="\e[0;37m"
+#                  BANNER DE TEXTO UwU
+
+
+BannerGuia(){
+	sleep 0.5
+	clear
+echo -e "
+██████╗  █████╗ ███████╗██╗  ██╗ ██████╗ ██╗   ██╗██╗ █████╗ BASH :D 
+██╔══██╗██╔══██╗██╔════╝██║  ██║██╔════╝ ██║   ██║██║██╔══██╗ COLORS
+██████╔╝███████║███████╗███████║██║  ███╗██║   ██║██║███████║ANONIMO
+██╔══██╗██╔══██║╚════██║██╔══██║██║   ██║██║   ██║██║██╔══██║ PRO..
+██████╔╝██║  ██║███████║██║  ██║╚██████╔╝╚██████╔╝██║██║  ██║HACKING
+╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═╝ ETICO..
+                    created by sharkcode..  
+" | lolcat
+}
+#===============================
+#        MENU V1.5
+#==============================
+Menu(){
+	BannerGuia
+
+echo -e "${rojo}[${blanco} ¿? ${rojo}]${blue} >>>${blanco} Menu V1.5 Nueva Version.."
+echo ""
+echo -e "${rojo}[${blanco} 01 ${rojo}]${blue} >>>${blanco} Introduccion a bash"
+echo -e "${rojo}[${blanco} 02 ${rojo}]${blue} >>>${blanco} Comando echo"
+echo -e "${rojo}[${blanco} 03 ${rojo}]${blue} >>>${blanco} Comando sleep"
+echo -e "${rojo}[${blanco} 04 ${rojo}]${blue} >>>${blanco} Comando Read"
+echo -e "${rojo}[${blanco} 05 ${rojo}]${blue} >>>${blanco} Lolcat en bash"
+echo -e "${rojo}[${blanco} 06 ${rojo}]${blue} >>>${blanco} Variables en bash"
+echo -e "${rojo}[${blanco} 07 ${rojo}]${blue} >>>${blanco} Funciones en bash"
+echo -e "${rojo}[${blanco} 08 ${rojo}]${blue} >>>${blanco} Condicionales"
+echo -e "${rojo}[${blanco} 09 ${rojo}]${blue} >>>${blanco} Ciclo while en bash"
+echo -e "${rojo}[${blanco} 10 ${rojo}]${blue} >>>${blanco} Ciclo until en bash"
+echo -e "${rojo}[${blanco} 11 ${rojo}]${blue} >>>${verde} Created by Sharkcode :D."
+echo -e "${rojo}[${blanco} 12 ${rojo}]${blue} >>>${verde} Contacta a shakcode.."
+echo ""
+echo -e "${rojo}[${blanco} 50 ${rojo}]${blue} >>>${rojo} Salir :( Adios!!"
+echo -e -n "${rojo}
+${rojo}[${blanco} ¿? ${rojo}]${blue} >>>${blanco} Escribe una opcion :)
+
+
+${rojo}[${blue} >> ${rojo}]${red} >>>" ${blanco}
+read -r Preguntas
+
+if [[ "${Preguntas}" == "1" || "${Preguntas}" == "01" ]]; then
+        clear
+        BannerGuia
+	echo -e "${amarillo}[señor bash]${verde} Extrayendo info.."
+	echo ""
+	sleep 2
+        echo -e "${blanco} ¿Que es bash? R= GNU Bash o simplemente Bash es una popular interfaz de usuario de línea de comandos, específicamente un shell de Unix; así como un lenguaje de scripting. Bash fue originalmente escrito por Brian Fox para el sistema operativo GNU, y pretendía ser el reemplazo de software libre del shell Bourne este nos puede 
+servir para iniciar a programar y crear pequeños programas llamados scripts. Por ejemplo este es un script..
+
+Para empezar a programar en bash necesitamos un editor de texto los cuales podemos encontrar en los paquetes de cualquier distribucion de linux.. para que el editor detecte que estamos escribiendo en bash tenemos que poner : (#!bin/bash).. El siguiente articulo trata de como iniciar en bash con el comando echo"
+echo ""
+echo -e "${amarillo}PRESIONE ${verde}ENTER ${amarillo}PARA CONTINUAR"
+read $ENTER
+sleep 1
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "2" || "${Preguntas}" == "02" ]]; then
+     clear
+     BannerGuia
+     echo -e "${amarillo}[señor bash]${verde} Extrayendo info.."
+     echo ""
+     sleep 3
+echo -e "${blanco} ¿Que es el comando echo? R= El comando echo es de los más utilizados en shell y scripts bash. Este comando tiene como misión imprimir los argumentos definidos con echo en nuestra consola, pueden ser a modo indicativo, informativo o cualquier argumento que necesites visualizar.
+
+Opciones del comando echo
+-n : No imprime la última línea de la consola.
+-e : Habilita la interpretación de secuencias de escape.
+-E : Deshabilita la interpretación de las secuencias de escape (por defecto).
+
+Ejemplo de uso: 
+echo -e 'Hola mundo'
+
+Lo que imprimira es: Hola mundo.. 
+
+El comando echo siempre se ocupa para imprimir el texto dentro de las comillas.. Esto es todo de echo"
+echo ""
+echo -e "${amarillo}PRESIONE ${verde}ENTER ${amarillo}PARA CONTINUAR"
+read $ENTER
+sleep 1
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "3" || "${Preguntas}" == "03" ]]; then
+	clear
+        BannerGuia
+        echo -e "${amarillo}[señor bash]${verde} Extrayendo info.."
+	echo ""
+	sleep 2
+echo -e "${blanco} ¿Que es el comando sleep? R= 
+comando sleep en Bash detiene la ejecución del siguiente comando por el tiempo especificado. Este comando se hace útil cuando queremos comprobar un determinado estado repetidamente hasta que el estado se convierte en lo que queremos.
+
+Sintaxis del comando sleep
+sleep NUMBER [SUFFIX]
+Aquí, NUMBER representa la cantidad de tiempo para detener la ejecución del siguiente comando en el script para, y SUFFIX representa la unidad de NUMBER. El SUFFIX puede tomar s, m, h, y como sus valores representan segundos, minutos, horas y días respectivamente. El valor por defecto de SUFFIX representa los segundos. Si se especifica más de un argumento, la ejecución se detendrá durante el tiempo equivalente a la suma de todos los valores del argumento.
+
+Ejemplo: comando sleep
+sleep 10
+Detiene la ejecución del siguiente comando del script durante 10 segundos.
+
+sleep 5m 50s
+Detiene la ejecución del siguiente comando del script durante 5 minutos y 50 segundos.
+
+#!/bin/bash
+
+echo -e 'hola mundo'
+sleep 5
+echo -e 'ola 5segundos despues'
+
+Resultado :
+hola mundo
+
+ola 5segundos despues
+
+
+Esto es todo de sleep"
+	
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+sleep 3
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "4" || "${Preguntas}" == "04" ]]; then
+	clear
+	BannerGuia
+	echo -e "${amarillo}[Señor bash]${verde} Extrayendo info.."
+	echo ""
+        sleep 1
+echo -e "${blanco} ¿Que es el comando read? R=
+El comando read interrumpe la ejecución del shell hasta que el usuario introduzca una cadena de caracteres (aunque sea vacía) en su entrada estándar.
+Te dare un pequeño ejemplo de codigo donde se ocupa read...
+
+#!bin/bash
+echo 'Presiona enter para descargar los repositorios'
+read $.enter
+apt-get update && apt get upgrade
+
+bueno lo que hara el script es esperar hasta que el usuario de enter es algo basico de read que creo debes aprender..
+Pero si tienes mas dudas contactame en el apartado de contactame :D"
+
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+sleep 1
+bash BashV1.5
+
+
+elif [[ "${Preguntas}" == "5" || "${Preguntas}" == "05" ]]; then
+	clear
+	BannerGuia
+	echo -e "${amarillo}[Señor bash]${verde} Extrayendo info.."
+	echo ""
+	sleep 1
+echo -e "${blanco} ¿Alguna vez te has preguntado como ocupar lolcat en bash?
+R= Pues yo te enseñare como ocupar la gema lolcat en bash para tener los mejores banners del mundo uwu..
+
+bueno primero tenemos que tener instada la gema lolcat.¿Comó hacemos esto? Tenemos que ejecutar el siguiente comando : 
+gem install lolcat
+
+con ese comando vamos a instalar la gema lolcat..
+
+Para iniciar a ocuparla en un script necesitamos hacer lo siguiente esto es unejemplo lo puedes emplear como gustes :
+
+#!bin/bash
+
+figlet BashGuia | lolcat
+
+=====================
+
+lo que imprimira es lo siguiente."
+echo ""
+figlet Bashguia | lolcat
+
+echo -e "Eso es todo de como ocupar la gema lolcat.. Se puede emplear en lo que tu gustes :) "
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+sleep 1
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "6" || "${Preguntas}" == "06" ]]; then
+        clear
+	BannerGuia
+        echo -e "${amarillo}[Señor bash]${verde} Extrayendo info"
+        echo ""
+	sleep 1
+echo -e "${blanco} ¿Que es una variable?
+Variables
+En todo script tendreis que trabajar con variables, mas tarde o mas temprano. Vamos a ver como se definen y usan. Una buena costumbre cuando definamos variables en Bash es utilizar letras mayusculas, esto no es necesario, pero nos ayudara a tener un script mas facil de entender.
+
+Definiendo Una Variable
+
+#!/bin/bash
+#
+# Esto es un ejemplo en Bash del clasico 'Hola Mundo'
+#
+
+
+MENSAJE='Hola Mundo'
+echo $.MENSAJE
+
+Hemos definido una variable llamada MENSAJE con el valor 'Hola Mundo', y la hemos usado con el comando echo para escribir el valor de la misma. Las variables en Bash se definen como NOMBRE=valor (sin espacios antes o despues del simbolo '=') y su valor se usa, poniendo el simbolo '$' delante del nombre de la variable, $.NOMBRE
+
+Si al utilizar el valor de una variable, el nombre de variable esta seguido de un caracter que sea otra letra, numero o el simbolo '_', tendremos que utilizar los simbolos '{}' alrededor del nombre de la variable"
+
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER	
+sleep 1
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "7" || "${Preguntas}" == "07" ]]; then
+	clear
+	BannerGuia
+	echo -e "${amarillo}[Señor bash]${verde} Extrayendo info"
+	echo ""
+	sleep 1
+echo -e "${blanco} ¿Que es una funcion? 
+Funciones
+En Bash se pueden definir funciones. Una funcion en Bash (denominada subrutina o procedimiento en otros lenguajes de programacion) se podria definir como un script dentro de un script. Sirve para organizar un script en unidades logicas de manera que sea mas facil mantenerlo y programarlo. En Bash las funciones se pueden definir de la siguiente manera:
+
+function nombre_de_funcion(){
+  comandos_del_shell
+}
+Un ejemplo de funcion en un script:
+
+#!bin/bash
+
+function HolaShell(){
+	sleep 5
+	clear
+}
+
+Bueno esa es una funcion para no seguir escribiendo sleep 5 + clear
+es una funcion basica pero muy buena
+"
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "8" || "${Preguntas}" == "08" ]]; then
+	clear
+	BannerGuia
+	echo -e "${amarillo}[Señor bash ]${verde} Extrayendo info"
+	echo ""
+echo -e "${blanco} ¿Que es una condicional en bash?	
+Con los condicionales en Bash, ya podemos, realmente, empezar a profundizar en el maravilloso mundo del scripting, y un poquito en la automatización. Por ejemplo, puedes crear un proceso que una vez al mes te borre los archivos de un directorio si el espacio es superior a uno determinado y si la fecha del archivo es inferior a una dada. Todo está condicionado…
+
+CONDICIONALES EN BASH
+
+Si tienes alguna idea de programación seguro que has oído hablar de los condicionales. Si no, es posible que conozcas el servicio ifttt. Eso de que si pasa esto entonces haz aquello. Pues ese servicio no es mas que una extrapolación de esto de los condicionales. Se trata de realizar una u otra acción en función de una pregunta. Si el resultado de la pregunta es uno, emprenderás una acción y si el resultado es otro, emprenderás una acción diferente.
+
+En Bash, esto de los condicionales se materializa con if then else y con case. Pero independientemente de uno u otro, en cualquier caso, se parte de resolver una cuestión, una prueba, un test, al final una comparación. De esta manera esto es lo primero que tienes que abordar en este capítulo, comparaciones en Bash.
+
+COMPARANDO EN BASH
+
+Para comparar en Bash se utiliza test o [. Ambos son totalmente equivalentes, y ambos están implementados, en el propio Bash. En el caso [, por cuestiones prácticas es obligatorio también utilizar su pareja [ o de otra forma te da error. Esta es la razón para que tenga que estar separado el corchete de la expresión que viene a continuación, porque es un comando.
+
+Por otro lado, también puedes utilizar dobles corchetes [[, para realizar tus comparaciones. Los dobles corchetes resultan ser una mejora respecto a los simples. Así, las diferencias entre uno y otro son las siguientes,
+
+COMPARANDO CADENAS
+[[	[
+>	>
+<	<
+=	=
+!=	!=
+COMPARANDO ENTEROS
+[[	[	
+-gt	-gt	mayor
+-lt	-lt	menor
+-ge	-ge	mayor o igual
+-le	-le	menor o igual
+-eq	-eq	igual
+-ne	-ne	distinto
+Aquí quiero que te des cuenta que [[ 001 = 1 ]] es falso mientras que [[ 001 -eq 1 ]] es cierto.
+
+OPERADORES BOOLEANOS
+[[	[
+&&	-a
+||	-o
+
+OTROS COMPARADORES INTERESANTES
+\-d te permitirá saber si es un directorio y si existe
+\-e lo mismo que en el caso anterior pero para archivos
+\-r en este caso te permite saber si el archivo tiene permiso de lectura
+\-s con esta opción puedes saber si el tamaño del archivo es mayor que cero. Es decir, que no se trata de un archivo vacío
+\-w te permitirá identificar si el archivo tienen permisos de escritura
+\-x lo mismo que en el caso anterior pero para el caso de permisos de ejecución.
+
+#!bin/bash
+
+if [[ $.1 =~ (.*)a$ ]]
+then
+	echo Sra. $.1
+else
+	echo Sr. $.1
+fi
+De esta forma aprovecho las características que ofrece los dobles corchetes con las expresiones regulares. No es por complicar la cosa. Otro ejemplo, es para saber si un número es par o impar. Para ello, puedes hacer un script como el que te muestro a continuación
+
+#!/bin/bash
+
+if [[ $.(($.1 % 2)) == 0 ]]
+then
+    echo Par
+else
+    echo Impar
+fi
+
+Si te fijas he añadido una sangría, de forma que tanto echo Par como echo Impar están desplazados hacia la derecha. Esto es mas por cuestiones de legibilidad que por otra razón. No es necesario hacer esto en Bash. Perfectamente lo podrías haber puesto como
+
+#!bin/bash
+if [[ $.(($.1 % 2)) == 0 ]]
+then
+echo Par
+else
+echo Impar
+fi
+
+Sin embargo, coincidirás conmigo, que esta segunda forma, es bastante mas difícil de leer que en el caso del primer ejemplo.
+
+ALGUNAS OPCIONES CON IF-THEN-ELSE
+Indicarte que puedes utilizar diferentes opciones, dependiendo del objetivo que persigas. Así, puedes hacer,
+
+si se cumple algo entonces haz esto
+
+if [[ $.a > $.b ]]
+then
+    echo mayor
+fi
+
+si se cumple algo entonces haz esto en caso contrario haz lo otro
+
+if [[ $.a > $.b ]]
+then
+    echo mayor
+else
+    echo menor
+fi
+
+si se cumple algo entonces haz esto en caso contrario si se cumple otra cosa haz lo otro
+
+if [[ $.a > $.b ]]
+then
+    echo mayor
+elif [[ $.b > $.c ]]
+then
+    echo lo que sea
+fi
+
+CONDICIONALES: CASE
+Un caso especial es cuando quieres comparar un elemento con diferentes supuestos. Podrías hacer if-then concatenados como has visto anteriormente, sin embargo, lo que no me puedes negar es que las concatenaciones son difíciles de leer. Al final se convierten el algo realmente farragoso, no solo de leer, si no también de trabajar. En algunos casos puedes reemplazar estas concatenaciones por otro tipo de comparación como son los Case. Lo que sin duda, Case traerá a tu código mucha mas claridad, según el caso, y resultará mas cómodo leer el código posteriormente.
+
+Así la sintasis de los Case es como puedes ver a continuación,
+
+
+case <expresión> in
+    <patrón 1>)
+        comandos
+        ;;
+    <patrón 2>)
+        comandos
+        ;;
+    *)
+        comandos
+        ;;
+esac
+
+Puedes utilizarla para operaciones realmente sencillas, como podría ser el ejemplo, sobre el significado de los colores que lees a continuación,
+
+#!/bin/bash
+case $.1 in
+    amarillo)
+        echo 'optimismo, claridad, calor'
+        ;;
+    naranja)
+        echo 'amigable, social, seguridad'
+        ;;
+    rojo)
+        echo 'atrevido, excitación, joven'
+        ;;
+    violeta)
+        echo 'creatividad, imaginativo, sabio'
+        ;;
+    azul)
+        echo 'útil, fuerza, fiel'
+        ;;
+    verde)
+        echo 'paz, salud, crecimiento'
+        ;;
+    blanco)
+        echo 'equilibrio, tranquilidad, neutro'
+        ;;
+    *)
+        echo 'Lo siento, no conozco ese color'
+        ;;
+esac
+
+No solo lo puedes utilizar en este caso, también puedes complicarlo, añadiendo rangos, un ejemplo,
+
+#!/bin/bash
+case $.1 in
+    [0-9])
+        echo 'Unidades'
+        ;;
+    1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9])
+        echo 'Decenas'
+        ;;
+    1[0-9][0-9]|2[0-9][0-9]|3[0-9][0-9]|4[0-9][0-9]|5[0-9][0-9]|6[0-9][0-9]|7[0-9][0-9]|8[0-9][0-9]|9[0-9][0-9])
+        echo 'Centenas'
+        ;;
+    1[0-9][0-9][0-9]|2[0-9][0-9][0-9]|3[0-9][0-9][0-9]|4[0-9][0-9][0-9]|5[0-9][0-9][0-9]|6[0-9][0-9][0-9]|7[0-9][0-9][0-9]|8[0-9][0-9][0-9]|9[0-9][0-9][0-9])
+        echo 'Millares'
+        ;;
+    *)
+        echo 'Ese es un número muy grande'
+        ;;
+esac
+
+Para terminar, Dare una conclusion personal...
+
+Para terminar, otro ejemplo, donde puedes establecer la periodificación de la historia de forma relativamente sencilla utilizando un Case,
+
+Hagregare sobre los bucles en un futuro."
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "9" || "${Preguntas}" == "09" ]]; then
+	clear
+	BannerGuia
+	echo -e "${amarillo}[Señor bash ]${verde} Extrayendo info"
+	echo ""
+echo -e "${blanco} ¿Que es el ciclo while?
+El ciclo while permite ejecutar un bloque de instrucciones mientras se cumpla la condición. Primero comprueba que en efecto se cumple la condición dada y entonces, ejecuta el segmento de código contenido entre las palabras do y done,  así sucesivamente hasta que la condición no se cumpla.
+
+SINTAXIS
+
+1. while [ condición ]
+2.do
+3.//Bloque de instrucciones
+4.done
+
+EJEMPLO
+
+#!/bin/bash
+contador=0
+termina=10
+while [ $.termina -ge $.contador ]
+do
+  echo $.contador
+  let contador=$.contador+1
+done
+
+Este ciclo imprime la serie de números del 0 al 10
+"
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "10" ]]; then
+	clear
+	BannerGuia
+	echo -e "${amarillo}[Señor bash ]${verde} Extrayendo info"
+	echo ""	
+echo -e "${blanco} ¿Que es el ciclo Until?
+El ciclo until, a diferencia del ciclo while, permite ejecutar un bloque de instrucciones mientras no se cumpla una condición dada. A diferencia del while, verifica que la condición sea falsa, entonces ejecuta el segmento de código contenido entre las palabrasdo y done, hasta que la condición se cumpla.
+
+Sintaxis
+
+until [ condición ]
+do
+//Bloque de instrucciones
+done
+
+Ejemplo :
+
+#!/bin/bash
+contador=0
+termina=10
+until [ $.termina -lt $.contador ]
+do
+  echo $.contador
+  let contador=$.contador+1
+done
+
+Este ciclo imprime la serie de números del 0 al 10.
+
+Nótese que aunque en esencia este código es muy parecido al ejemplo del while, existe una diferencia en la condición dada ya que mientras con until se verifica si la condición es falsa, con while sucede lo contrario, es decir, que sea verdadera; por lo que en en el ejemplo de while se utiliza -gepara comparar si es mayor o igual y en el ejemplo de until se utiliza -ltpara comparar si es menor que.
+
+Como te habrás dado cuenta, el uso del los ciclos while y until en Bash es muy fácil. Dependiendo del problema a resolver conviene utilizar uno u otro.
+
+Esto es todo de los ciclos while y until
+"
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "11" ]]; then
+	clear
+	BannerGuia
+echo -e "${amarillo}[Señor bash ]${verde} Extrayendo info"
+echo ""
+sleep 2
+echo -e "${verde} Hola soy jose o sharkcode Solo quiero que sepas que este script me costo nucho hacerlo fue algo muy dificil lo hice con mucho cariño para ustedes los amo <3"
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "12" ]]; then
+	clear
+	BannerGuia
+	echo -e "${amarillo}[Señor bash ]${verde} Extrayendo info"
+	echo ""
+echo -e "${verde} Hola Te dejo mi numero y youtube a continuacion"
+echo ""
+echo -e "${verde} Youtube => https://youtube.com/channel/UCgCZZnY8xDZgSnZUD9vMU9g"
+echo ""
+sleep 2
+echo -e "${verde} Numero personal => +52 2283821202"
+echo ""
+echo -e "${amarillo}PRESIONE ${verde} ENTER${amarillo} PARA CONTINUAR"
+read $ENTER
+bash BashV1.5
+
+elif [[ "${Preguntas}" == "50" ]]; then
+	clear
+	figlet ADIOS | lolcat
+	exit
+else
+echo -e "${cian}
+╔═══════════════════╗
+█ ${rojo}OPCIÓN INCORRECTA ${cian}█
+╚═══════════════════╝
+"${blanco}
+	sleep 2
+	Menu
+fi
+}
+Menu
+#
+# DECLARED FUNCTIONS
+#
+BannerGuia
+Menu
+
