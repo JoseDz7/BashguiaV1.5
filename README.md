@@ -17,4 +17,4 @@ cd BashguiaV1.5
 
 chmod +x *
 
-bash BashguiaV1.5
+bash BashV1.5
